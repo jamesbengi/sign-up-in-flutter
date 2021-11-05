@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "493812258704",
+    "project_id": "fashion-635c3",
+    "storage_bucket": "fashion-635c3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493812258704:android:3f6e19e15c797ca8dfc515",
+        "android_client_info": {
+          "package_name": "com.fashion.lukukenya"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "493812258704-t6k9o2eua0h14mi7iejgsitaf6o52ktq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjhQXcSYewgMvaILGNMeuTfIjaSWt7Hms"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "493812258704-t6k9o2eua0h14mi7iejgsitaf6o52ktq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
