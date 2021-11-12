@@ -96,19 +96,14 @@ _sendingmails() async {
         backgroundColor: Colors.grey,
         centerTitle: true,
         actions: [
-          ElevatedButton(onPressed: (){
-            Navigator.push(context,
-             MaterialPageRoute(builder: (context) =>SignUp()
-             )
-             );
-             
+          IconButton(onPressed: (){},
+           icon:Icon(Icons.shopping_cart)
+          ),
+          IconButton(onPressed: (){
+            MaterialPageRoute(builder: (context) =>SignUp()
+            );
           },
-           child: Text("SignUp",style: TextStyle(color: Colors.black),),
-           style: ButtonStyle(
-             backgroundColor: MaterialStateProperty.all(Colors.white54),
-             
-           ),
-           
+           icon:Icon(Icons.person_add)
            )
         ],
       ),
@@ -230,42 +225,70 @@ _sendingmails() async {
                     ),
                     SizedBox(height: 10,),
                   Container(
-                    height:200,
-                    child: Card(
-                      shape:RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(25),
-                      ),
-                      child: Row(
-                        children: <Widget>[
-                          Image(image: AssetImage("assets/yoka.jpg"),
+                    height: 150,
+                    child:ListView(
+                      scrollDirection: Axis.horizontal,
+                      children: <Widget>[
+                        AspectRatio(aspectRatio: 2/2.5,
+                        child: Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            image: DecorationImage(image: AssetImage("assests/draw.jpg"),
+                            fit:BoxFit.cover
+                            )
+                          ),
                           
-                          )
+                        ),
+                        ),
+                        AspectRatio(aspectRatio: 2/2.5,
+                        child: Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            image: DecorationImage(image: AssetImage("assests/lee.jpg"),
+                            fit:BoxFit.cover
+                            )
+                          ),
                           
+                        ),
+                        ),
+                        AspectRatio(aspectRatio: 2/2.5,
+                        child: Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            image: DecorationImage(image: AssetImage("assests/lofa.jpg"),
+                            fit:BoxFit.cover
+                            )
+                          ),
                           
+                        ),
+                        ),
+                        AspectRatio(aspectRatio: 2/2.5,
+                        child: Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            image: DecorationImage(image: AssetImage("assests/nike.jpg"),
+                            fit:BoxFit.cover
+                            )
+                          ),
                           
+                        ),
+                        ),
+                        AspectRatio(aspectRatio: 2/2.5,
+                        child: Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            image: DecorationImage(image: AssetImage("assests/sply.jpg"),
+                            fit:BoxFit.cover
+                            )
+                          ),
                           
-                        ],
-                      ),
-                    ),
-                  ),
-                  SizedBox(height: 10,),
-                   Container(
-                    height:200,
-                    child: Card(
-                      shape:RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(25),
-                      ),
-                      child: Row(
-                        children: <Widget>[
-                          
-                          
-                          
-                          
-                          
-                        ],
-                      ),
-                    ),
-                  ),
+                        ),
+                        )
+                      ],
+                    )
+                  )
+            
+                   
                     
                   ],
                 ),
